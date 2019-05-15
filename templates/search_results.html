@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Search Results</title>
 </head>
 <body>
-
+    <ul>
+        {% for city in object_list %}
+            <li>
+                {{ city.name }}, {{ city.state }}
+            </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

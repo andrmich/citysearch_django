@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HomePage</title>
 </head>
 <body>
-
+    <form action="{% 'search_results' %}" method="get">
+        <input name="q" type="text" placeholder="Search..">
+    </form>
 </body>
 </html>
