@@ -3,3 +3,4 @@ db.sqlite3
 .idea/*
 __pycache__
 cities/migrations/__pycache__/
+citysearch_project/__pycache__/settings.cpython-37.pyc
