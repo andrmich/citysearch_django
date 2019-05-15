@@ -13,7 +13,7 @@ class SearchResultsView(ListView):
     template_name = "search_results.html"
 
     def get_queryset(self):
-        return City.objects.filter(
-            Q(name__icontains='Boston') | Q(state__icontains='NY')
-        )
-
+        query = self.request.GET.get('q')
+        object_list = City.objects.filter(
+            Q(name__icontains=query) | Q(state__icontains=query))
+        return object_list
