@@ -1,4 +1,5 @@
 db.sqlite3
 .python-version
-idea/*
 .idea/*
+__pycache__
+cities/migrations/__pycache__/
